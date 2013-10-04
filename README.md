@@ -26,6 +26,8 @@ var targetUrl = "/mysite/simeFile.pdf";
 track.pushPageview(targetUrl);
 ```
 
+***
+
 ### Pushing a custom event
 Custom events are pretty swell when you need to track specific things like UX interactions or store specific information
 that can't be stored by simple pageviews.
