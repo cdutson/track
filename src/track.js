@@ -1,11 +1,11 @@
  if(typeof window.track === "undefined"){
      window.track = { 
-        pushPageview: function pushPageview (url) { 
+        pushPageview: function pushPageview(url) { 
             if (null !== _gaq && "undefined" !== _gaq) { 
                 _gaq.push(["_trackPageview", url]) 
             } 
         }, 
-        pushEvent: function pushEvent (category, action, label, value) { 
+        pushEvent: function pushEvent(category, action, label, value) { 
             if (null !== _gaq && "undefined" !== _gaq) { 
                 var toPush = [category,action];
                 if(label !== "undefined" && label !== null) {
